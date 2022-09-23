@@ -52,30 +52,43 @@ PROCEDURE
 
 CIRCUIT DIAGRAM 
 
-
-
-
-
 ![image](https://user-images.githubusercontent.com/36288975/163530437-87a0afbd-b3c9-44ad-b907-5de63486fb9d.png)
-
-
-
-FIGURE -03
-
-
-
+[My image](username.github.com/repository/img/image.jpg)
 
 
 PROGRAM 
  
- 
- 
- 
- 
+ ```
+ Developed by: Balaji J
+Roll No: 22000048
 
 
+int ledpin = 4;
+int pushbtn = 2;
+int val = 0;
+void setup()
+{
+pinMode(ledpin,OUTPUT);
+pinMode(pushbtn,INPUT);
+}
 
+void loop()
+{
+val = digitalRead(pushbtn);
+if (val==0)
+{
+digitalWrite(ledpin,HIGH);
+}
+else
+{
+digitalWrite(ledpin,LOW);
+}
+}
+ ```
+ 
 Output of the simulation :
 
-[My image](username.github.com/repository/img/image.jpg)
+![log](Circuitt.png)
 
+Result:
+Thus the simulation output is completed in tinker cad successfully.
